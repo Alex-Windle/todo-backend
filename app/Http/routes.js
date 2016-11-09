@@ -26,4 +26,5 @@ Route.get('/users/:id', 'UserController.show')
 Route.post('/users/:id/todo-lists', 'TodoListController.create')
 Route.get('/users/:id/todo-lists', 'TodoListController.index')
 
-
+Route.post('/todo-lists/:id/tasks', 'TasksController.create')
+Route.get('/todo-lists/:id/tasks', 'TasksController.index')
